@@ -1,7 +1,7 @@
 
 
 namespace SIK.Models{
-    public class Contoh{
+    public class Aktiva{
         
     }
 }

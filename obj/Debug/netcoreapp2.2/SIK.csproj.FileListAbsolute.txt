@@ -24,3 +24,8 @@ D:\SIK\obj\Debug\netcoreapp2.2\SIK.csproj.CopyComplete
 D:\SIK\obj\Debug\netcoreapp2.2\Razor\Views\Home\About.g.cshtml.cs
 D:\SIK\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
 D:\SIK\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+D:\SIK\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Login.g.cshtml.cs
+D:\SIK\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Registrasi.g.cshtml.cs
+D:\SIK\obj\Debug\netcoreapp2.2\Razor\Views\Aktiva\Create.g.cshtml.cs
+D:\SIK\obj\Debug\netcoreapp2.2\Razor\Views\Aktiva\Details.g.cshtml.cs
+D:\SIK\obj\Debug\netcoreapp2.2\Razor\Views\Aktiva\Update.g.cshtml.cs

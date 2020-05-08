@@ -2,5 +2,14 @@
     Layout ="_Layout";
 }
 
-   <h1>Selamat Datang di Home Page</h1>
-    <p>selamat datang di home page</p>
+   <h1 style="text-align:center">SISTEM AKUNTANSI AKTIVA TETAP</h1>
+    <div class="row">
+        @if(ViewData["pesan"]!=null){
+          @Html.Raw(ViewData["pesan"])
+        }else {
+             <p style="margin-left:auto; margin-right:auto;">PERUSAHAAN JASA KONSTRUKSI</p>
+        }
+        </div>
+    <center><img class="img-responsive" src="/img/kontruksi.jpg" class="img-rounded" alt="kontruksi" style="width:68%"></center>
+  
+    <p>Sistem ini dibuat dalam rangka untuk membantu sebuah perusahaan jasa konstruksi dalam pencatatan dan pengolahan data yang masih manual menggunakan Excel memjadi menggunakan sistem. Sistem ini dibuat untuk dapat menghitung penyusutan sesuai periode yang diinginkan, menghitung penyusutan menggunakan metode yang diinginkan, dan mengelompokkan data aset perusahaan. Sistem ini hanya dikelola oleh 1 orang admin saja sehingga yang dapat memasukkan data aktiva hanya 1 admin saja.</p>
