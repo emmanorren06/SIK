@@ -2961,8 +2961,33 @@
   "RootNamespace": "SIK",
   "Documents": [
     {
+      "FilePath": "d:\\SIK\\Views\\Admin\\Registrasi.cshtml",
+      "TargetPath": "Views\\Admin\\Registrasi.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\SIK\\Views\\Admin\\Tampil.cshtml",
+      "TargetPath": "Views\\Admin\\Tampil.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\SIK\\Views\\Admin\\Login.cshtml",
+      "TargetPath": "Views\\Admin\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\SIK\\Views\\Aktiva\\Create.cshtml",
+      "TargetPath": "Views\\Aktiva\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\SIK\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\SIK\\Views\\Kategori\\Create.cshtml",
+      "TargetPath": "Views\\Kategori\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2976,8 +3001,33 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\SIK\\Views\\Aktiva\\Details.cshtml",
+      "TargetPath": "Views\\Aktiva\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\SIK\\Views\\Admin\\Update.cshtml",
+      "TargetPath": "Views\\Admin\\Update.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\SIK\\Views\\Kategori\\Tampil.cshtml",
+      "TargetPath": "Views\\Kategori\\Tampil.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\SIK\\Views\\Home\\About.cshtml",
       "TargetPath": "Views\\Home\\About.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\SIK\\Views\\Kategori\\Update.cshtml",
+      "TargetPath": "Views\\Kategori\\Update.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\SIK\\Views\\Aktiva\\Update.cshtml",
+      "TargetPath": "Views\\Aktiva\\Update.cshtml",
       "FileKind": "mvc"
     }
   ],

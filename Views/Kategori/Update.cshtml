@@ -1,0 +1,32 @@
+@{
+    Layout = "_Layout";
+}
+
+<h2>AKTIVA</h2>
+
+<div class="col-md-6">
+    @* <form asp-action="CreatePost">  *@
+    <form method="POST" action="/Kategori/Tampil">
+         <div class="form-group">
+            <label for="id_kategori">ID Kategori:</label>
+            <input type="text" readonly="readonly" class="form-control" name="id_kategori">
+        </div>
+        <div class="form-group">
+            <label for="nama_kategori">Nama Kategori:</label>
+            <input type="text" class="form-control" name="nama_kategori" >
+        </div>
+        <div class="form-group">
+            <label for="umur_ekonomis">Umur Ekonomis:</label>
+            <input type="text" class="form-control" name="umur_ekonomis">
+        </div>
+        <div class="form-group">
+            <label for="metode">Metode:</label>
+            <select id="metode" name="metode">
+                <option value="volvo">Penyusutan Saldo Menurun Berganda</option>
+                <option value="saab">Penyusutan Garis Lurus</option>
+            </select>
+        </div>
+        <button class="btn btn-primary">Update</button>
+    </form> 
+    @* </form> *@
+    </div>

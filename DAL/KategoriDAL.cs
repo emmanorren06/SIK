@@ -9,11 +9,11 @@ using SIK.Models;
 
 namespace SIK.DAL
 {
-    public class AdminDAL : IAdmin
+    public class KategoriDAL : IKategori
     {
         private IConfiguration _config;
 
-        public AdminDAL(IConfiguration config)
+        public KategoriDAL(IConfiguration config)
         {
             _config = config;
         }
@@ -21,34 +21,32 @@ namespace SIK.DAL
         private string GetConnStr(){
             return _config.GetConnectionString("DefaultConnection");
         }
-        public void Delete(Admin adm)
+        public void Delete(Kategori ktg)
         {
             throw new System.NotImplementedException();
         }
 
-        public IEnumerable<Admin> GetAllAdmin()
+        public IEnumerable<Kategori> GetAllKategori()
         {
             using(SqlConnection conn = new SqlConnection(GetConnStr())){
-                var strSql = @"select * from Admin order by username";
-                return conn.Query<Admin>(strSql);
+                var strSql = @"select * from Kateg order by nama_kategori";
+                return conn.Query<Kategori>(strSql);
             }
         }
 
-        public Admin GetByID(string id_admin)
+        public Kategori GetByID(string id_kategori)
         {
             throw new System.NotImplementedException();
         }
 
-        
-        public void Insert(Admin adm)
+        public void Insert(Kategori ktg)
         {
-            
             using(SqlConnection conn = new SqlConnection(GetConnStr())){
-                var strSql = @"insert into Admin(id_admin, username, password) 
-                values(@id_admin,@username,@password)";
+                var strSql = @"insert into Kategori(id_kategori , nama_kategori, umur_ekonomis, metode) 
+                values(@id_kategori,@nama_kategori,@umur_ekonomis,@metode)";
 
                 try{
-                    var param = new {id_admin = adm.id_admin, username = adm.username, password = adm.password};
+                    var param = new {id_kategori = ktg.id_kategori, nama_kategori = ktg.nama_kategori, umur_ekonomis = ktg.umur_ekonomis, metode = ktg.metode};
                     conn.Execute(strSql,param);
                 }
                 catch(SqlException sqlEx){
@@ -57,7 +55,7 @@ namespace SIK.DAL
             }
         }
 
-        public void Update(Admin adm)
+        public void Update(Kategori ktg)
         {
             throw new System.NotImplementedException();
         }

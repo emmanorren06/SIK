@@ -1,0 +1,24 @@
+@model SIK.Models.Admin
+
+@{
+    Layout = "_Layout";
+}
+
+<h2>ADMIN</h2>
+
+   
+    <div class="col-md-6">
+    @* <form asp-action="CreatePost">  *@
+     <form method="POST" action="/Admin/Tampil">
+        <div class="form-group">
+            <label for="Username">Username:</label>
+            <input type="text" class="form-control" name="Username" />
+        </div>
+        <div class="form-group">
+            <label for="Password">Password:</label>
+            <input type="text" class="form-control" name="Password"/>
+        </div>
+        <button class="btn btn-primary">Update</button>
+    </form> 
+    @* </form> *@
+ </div>

@@ -1,0 +1,40 @@
+
+@{
+    Layout = "_Layout";
+}
+
+<h2>Daftar Aktiva</h2>
+<a asp-action="Create" class="btn btn-success btn-xs">Tambah Data</a>
+<div class="row">
+    @if(ViewData["pesan"]!=null){
+        @Html.Raw(ViewData["pesan"])
+    }
+    <br/><br/>
+</div>
+<table class="table table-striped">
+    <tr>
+        <th>id Aktiva</th>
+        <th>id Kategori</th>
+        <th>Nama Aktiva</th>
+        <th>Tgl Pembelian</th>
+        <th>Tahun Penyusutan</th>
+        <th>Harga Perolehan</th>
+        <th>Residu</th>
+        <th></th>
+        <th></th>
+    </tr>
+    @foreach(var dat in Model){
+        <tr>
+            <td>@dat.id_aktiva</td>
+            <td>@dat.id_kategori</td>
+            <td>@dat.nama_aktiva</td>
+            <td>@dat.tgl_pembelian</td>
+            <td>@dat.tahun_penyusutan</td>
+            <td>@dat.harga_perolehan</td>
+            <td>@dat.residu</td>
+            <td><a asp-action="Update" asp-route-id="@dat.id_aktiva">
+                Update</a></td>
+            <td><a asp-action="Delete" asp-route-id="@dat.id_aktiva">delete</a></td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,34 @@
+
+@{
+    Layout = "_Layout";
+}
+
+<h2>Daftar Kategori</h2>
+<a asp-action="Create" class="btn btn-success btn-xs">Tambah Data</a>
+<div class="row">
+    @if(ViewData["pesan"]!=null){
+        @Html.Raw(ViewData["pesan"])
+    }
+    <br/><br/>
+</div>
+<table class="table table-striped">
+    <tr>
+        <th>ID Kategori</th>
+        <th>Nama Kategori</th>
+        <th>Umur Ekonomis</th>
+        <th>Metode</th>
+        <th></th>
+        <th></th>
+    </tr>
+    @foreach(var data in Model){
+        <tr>
+            <td>@data.id_kategori</td>
+            <td>@data.nama_kategori</td>
+            <td>@data.umur_ekonomis</td>
+            <td>@data.metode</td>
+            <td><a asp-action="Update" asp-route-id="@data.id_kategori">
+                Update</a></td>
+            <td><a asp-action="Delete" asp-route-id="@data.id_kategori">delete</a></td>
+        </tr>
+    }
+</table>

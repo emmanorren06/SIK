@@ -29,3 +29,8 @@ D:\SIK\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Registrasi.g.cshtml.cs
 D:\SIK\obj\Debug\netcoreapp2.2\Razor\Views\Aktiva\Create.g.cshtml.cs
 D:\SIK\obj\Debug\netcoreapp2.2\Razor\Views\Aktiva\Details.g.cshtml.cs
 D:\SIK\obj\Debug\netcoreapp2.2\Razor\Views\Aktiva\Update.g.cshtml.cs
+D:\SIK\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Update.g.cshtml.cs
+D:\SIK\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Tampil.g.cshtml.cs
+D:\SIK\obj\Debug\netcoreapp2.2\Razor\Views\Kategori\Create.g.cshtml.cs
+D:\SIK\obj\Debug\netcoreapp2.2\Razor\Views\Kategori\Tampil.g.cshtml.cs
+D:\SIK\obj\Debug\netcoreapp2.2\Razor\Views\Kategori\Update.g.cshtml.cs
