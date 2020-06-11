@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using SIK.DAL;
 
 namespace SIK
@@ -17,6 +18,10 @@ namespace SIK
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddSession(options=>{
+                options.IdleTimeout = TimeSpan.FromMinutes(2);
+            });
+            services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped<IAdmin, AdminDAL>();
             services.AddScoped<IAktiva, AktivaDAL>();
             services.AddScoped<IKategori, KategoriDAL>();
@@ -31,6 +36,7 @@ namespace SIK
             }
 
             app.UseStaticFiles();
+            app.UseSession();
             app.UseMvcWithDefaultRoute();
 
             app.Run(async (context) =>

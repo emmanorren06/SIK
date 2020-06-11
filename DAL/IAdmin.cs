@@ -13,6 +13,8 @@ namespace SIK.DAL
         void Insert(Admin adm);
         void Update(Admin adm);
         void Delete(Admin adm);
+
+        Admin CekLogin(string username, string password);
         
     }
     

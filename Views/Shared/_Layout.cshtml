@@ -1,3 +1,11 @@
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+  var username = HttpContextAccessor.HttpContext.Session.GetString("username");
+}
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -252,8 +260,21 @@
             </li> *@
 
             <!-- Nav Item - Messages -->
-            @* <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            @* <li class="nav-item dropdown no-arrow mx-1"> *@
+              @if(username==null){
+              <li class="nav-item">
+                  <a class="nav-link" href="/Admin/Login">
+                    <i class="fas fa-fw fa-user"></i> 
+                    <span>Login</span></a>
+              </li>
+              }else{
+              <li class="nav-item">
+                  <a class="nav-link" href="/Admin/Logout">
+                    <i class="fas fa-fw fa-user"></i> 
+                    <span>Logout</span></a>
+              </li>
+              }
+              @* <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-envelope fa-fw"></i>
                 <!-- Counter - Messages -->
                 <span class="badge badge-danger badge-counter">7</span>
@@ -304,8 +325,8 @@
                   </div>
                 </a>
                 <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
-              </div>
-            </li> *@
+              </div> *@
+            </li>
 
             <div class="topbar-divider d-none d-sm-block"></div>
 
